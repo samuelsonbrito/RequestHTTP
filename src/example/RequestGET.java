@@ -17,7 +17,7 @@ public class RequestGET {
 
         try {
             RequestHttp http = new RequestHttp("http://localhost/yourFile.php");
-            http.setParameters("id=1");
+            http.setParameters("?id=1");
             http.get();
         } catch (Exception ex) {
             System.out.println("Error: "+ex);
